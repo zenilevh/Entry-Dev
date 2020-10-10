@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $("#panel-btn").click(function() {
         $(".panel-wrap").slideUp('slow');
-        setWithExpiry('panel-wrap', 5000)
+        setWithExpiry('panel-wrap', 60000)
     });
 });
 
