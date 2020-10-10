@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #e5e5e5;
+}
+
+.color {
+    color: #007bc1;
+    color: #004a75;
+    color: #ff8000;
+    color: #cc6600;
+    color: #e5e5e5;
+}
+
+.notification {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    column-gap: 25px;
+    padding: 10px;
+    transition: all 0.4s;
+    z-index: 10;
+}
+
+.hide {
+    transform: translateY(-100%);
+}
+
+.notification>p {
+    width: 40rem;
+    font-weight: 700;
+}
+
+a {
+    font-weight: bold;
+}
+
+.notification button {
+    font-size: 15px;
+    background-color: #007bc1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1482c2;
+}
+
+.hero-section {
+    background-image: url(./assets/work-desk__dustin-lee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    position: relative;
+    padding: 15vh 0;
+    flex-direction: column;
+}
+
+.hero-section::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #004872;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.hero-section>* {
+    z-index: 9;
+}
+
+.hero-section>img {
+    position: absolute;
+    margin: 2rem 2rem 0rem 2rem;
+    max-width: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text>h4 {
+    font-weight: 200;
+    margin: 15px auto;
+}
+
+.hero-text>h3 {
+    margin: 15px auto;
+}
+
+.hero-text>p {
+    font-size: 20px;
+}
+
+.hero-text>button {
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    border: solid white;
+    background-color: transparent;
+    margin-top: 25px;
+    border-width: 2px;
+}
+
+.hero-text>button:hover {
+    font-weight: 700;
+    background-color: white;
+    color: #004a75;
+}
+
+.highlight-text {
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-text>h1 {
+    font-size: 30px;
+}
+
+.highlight-text>p {
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+
+.highlight-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: outset;
+    border-color: #e5e5e5;
+    border-width: 1px;
+    border-radius: 3px;
+    width: 490px;
+    padding: 15px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.card-header>i {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.card-content {
+    text-align: left;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.panel-wrap {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    max-width: 600px;
+    height: 15%;
+    background-color: #007bc1;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-header button {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.panel-content h3 {
+    font-size: 20px;
+}
+
+.panel-content {
+    line-height: 0.7cm;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form input {
+    text-indent: 0.3cm;
+    width: 50%;
+}
+
+.form button {
+    background-color: #ff8000;
+    border-radius: 2px;
+    padding: 6px 10px;
+    text-align: center;
+    color: white;
+    /* flex: 1; */
+}
+
+footer {
+    font-size: 15px;
+    color: white;
+    background-color: #040138;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width:1520px) {
+    .card {
+        width: 450px;
+    }
+}
+
+@media all and (max-width:1400px) {
+    .card {
+        width: 400px;
+    }
+}
+
+@media all and (max-width:1250px) {
+    .card {
+        width: 320px;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .card {
+        width: 300px;
+    }
+}
+
+@media all and (max-width:960px) {
+    .card {
+        width: 320px;
+    }
+}
+
+@media all and (max-width:670px) {
+    .card {
+        width: 280px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .card {
+        width: 250px;
+    }
+}
+
+@media all and (max-width:640px) {
+    .panel-wrap {
+        height: 20%;
+    }
+    .form {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form input,
+    .form button {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:535px) {
+    .card {
+        width: 220px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .card {
+        width: 350px;
+    }
+    .panel-wrap {
+        height: 25%;
+    }
+}
+
+@media all and (max-width:720px) {
+    .notification {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .notification>p {
+        width: auto;
+    }
+    button {
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+}
